@@ -1,0 +1,67 @@
+/**
+ * Apple-Inspired Design System — Mobile SCSS Variables
+ * 与 admin theme.css Apple 配色对齐
+ */
+
+/* ═══════════════════════════════════════════
+ *  品牌色 — Apple Monochrome
+ * ═══════════════════════════════════════════ */
+$uni-color-primary: #1d1d1f;
+$uni-color-primary-dark: #000000;
+$uni-color-success: #86868b;
+$uni-color-warning: #424245;
+$uni-color-error: #1d1d1f;
+
+/* 品牌渐变 */
+$brand-gradient: linear-gradient(135deg, #1d1d1f, #000000);
+$brand-glow: 0 0 24px rgba(0, 0, 0, 0.1);
+
+/* ═══════════════════════════════════════════
+ *  文字颜色 — Apple colors
+ * ═══════════════════════════════════════════ */
+$uni-text-color: #1d1d1f;
+$uni-text-color-inverse: #ffffff;
+$uni-text-color-grey: #86868b;
+$uni-text-color-placeholder: rgba(134,134,139,0.5);
+$uni-text-color-disable: rgba(134,134,139,0.3);
+
+/* ═══════════════════════════════════════════
+ *  背景颜色
+ * ═══════════════════════════════════════════ */
+$uni-bg-color: #ffffff;
+$uni-bg-color-grey: #f5f5f7;
+$uni-bg-color-hover: rgba(0,0,0,0.03);
+$uni-bg-color-mask: rgba(0,0,0,0.3);
+
+/* ═══════════════════════════════════════════
+ *  边框颜色
+ * ═══════════════════════════════════════════ */
+$uni-border-color: rgba(0,0,0,0.06);
+
+/* ═══════════════════════════════════════════
+ *  尺寸变量
+ * ═══════════════════════════════════════════ */
+$uni-font-size-sm: 12px;
+$uni-font-size-base: 14px;
+$uni-font-size-lg: 16px;
+
+$uni-img-size-sm: 20px;
+$uni-img-size-base: 26px;
+$uni-img-size-lg: 40px;
+
+/* Border Radius — Apple style larger */
+$uni-border-radius-sm: 8px;
+$uni-border-radius-base: 12px;
+$uni-border-radius-lg: 20px;
+$uni-border-radius-circle: 50%;
+
+/* 间距 */
+$uni-spacing-row-sm: 5px;
+$uni-spacing-row-base: 10px;
+$uni-spacing-row-lg: 15px;
+
+$uni-spacing-col-sm: 4px;
+$uni-spacing-col-base: 8px;
+$uni-spacing-col-lg: 12px;
+
+$uni-opacity-disabled: 0.3;

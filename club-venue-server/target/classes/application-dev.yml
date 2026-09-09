@@ -1,0 +1,4 @@
+app:
+  jwt:
+    secret: club-venue-management-jwt-secret-key-2026-long-enough-for-hs256!
+    expire-ms: 604800000

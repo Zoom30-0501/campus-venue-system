@@ -1,0 +1,143 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": { "navigationBarTitleText": "社团活动场地管理" }
+    },
+    {
+      "path": "pages/login/login",
+      "style": { "navigationBarTitleText": "" }
+    },
+    {
+      "path": "pages/register/register",
+      "style": { "navigationBarTitleText": "注册" }
+    },
+    {
+      "path": "pages/club/list",
+      "style": { "navigationBarTitleText": "社团列表" }
+    },
+    {
+      "path": "pages/club/detail",
+      "style": { "navigationBarTitleText": "社团详情" }
+    },
+    {
+      "path": "pages/venue/list",
+      "style": { "navigationBarTitleText": "场地列表" }
+    },
+    {
+      "path": "pages/venue/detail",
+      "style": { "navigationBarTitleText": "场地详情" }
+    },
+    {
+      "path": "pages/activity/list",
+      "style": { "navigationBarTitleText": "活动列表" }
+    },
+    {
+      "path": "pages/activity/apply",
+      "style": { "navigationBarTitleText": "申请场地" }
+    },
+    {
+      "path": "pages/activity/detail",
+      "style": { "navigationBarTitleText": "活动详情" }
+    },
+    {
+      "path": "pages/activity/enroll",
+      "style": { "navigationBarTitleText": "报名参加活动" }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": { "navigationBarTitleText": "个人中心" }
+    },
+    {
+      "path": "pages/mine/profile",
+      "style": { "navigationBarTitleText": "编辑资料" }
+    },
+    {
+      "path": "pages/mine/my-activities",
+      "style": { "navigationBarTitleText": "我的活动" }
+    },
+    {
+      "path": "pages/mine/my-checkins",
+      "style": { "navigationBarTitleText": "签到记录" }
+    },
+    {
+      "path": "pages/mine/my-suggestions",
+      "style": { "navigationBarTitleText": "我的建议" }
+    },
+    {
+      "path": "pages/mine/my-enrollments",
+      "style": { "navigationBarTitleText": "我的报名" }
+    },
+    {
+      "path": "pages/mine/my-applications",
+      "style": { "navigationBarTitleText": "入团申请记录" }
+    },
+    {
+      "path": "pages/suggestion/add",
+      "style": { "navigationBarTitleText": "提交建议" }
+    },
+    {
+      "path": "pages/facility/list",
+      "style": { "navigationBarTitleText": "设施列表" }
+    },
+    {
+      "path": "pages/venue/schedule",
+      "style": { "navigationBarTitleText": "场地排期" }
+    },
+    {
+      "path": "pages/activity/rating",
+      "style": { "navigationBarTitleText": "活动评价" }
+    },
+    {
+      "path": "pages/activity/checkin",
+      "style": { "navigationBarTitleText": "活动签到" }
+    },
+    {
+      "path": "pages/club/members",
+      "style": { "navigationBarTitleText": "社团成员" }
+    },
+    {
+      "path": "pages/club/album",
+      "style": { "navigationBarTitleText": "社团相册" }
+    },
+    {
+      "path": "pages/club/apply",
+      "style": { "navigationBarTitleText": "入团申请" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "社团活动管理",
+    "navigationBarBackgroundColor": "#f5f5f7",
+    "backgroundColor": "#f5f5f7",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#86868b",
+    "selectedColor": "#2997ff",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/club/list",
+        "text": "社团"
+      },
+      {
+        "pagePath": "pages/venue/list",
+        "text": "场地"
+      },
+      {
+        "pagePath": "pages/activity/list",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

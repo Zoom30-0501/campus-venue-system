@@ -1,0 +1,1895 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-06-23 02:45:12.450  INFO 221668 --- [           main] com.club.venue.ClubVenueApplication      : Starting ClubVenueApplication v1.0.0-SNAPSHOT using Java 23.0.1 on Regret with PID 221668 (C:\Users\admin\Desktop\club-venue-management\club-venue-server\target\club-venue-server-1.0.0-SNAPSHOT.jar started by admin in C:\Users\admin\Desktop\club-venue-management\club-venue-server)
+2026-06-23 02:45:12.452 DEBUG 221668 --- [           main] com.club.venue.ClubVenueApplication      : Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-06-23 02:45:12.452  INFO 221668 --- [           main] com.club.venue.ClubVenueApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-23 02:45:13.743  INFO 221668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-23 02:45:13.744  INFO 221668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-23 02:45:13.768  INFO 221668 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2026-06-23 02:45:14.423  INFO 221668 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.activiti.spring.boot.ActivitiMethodSecurityAutoConfiguration$ActivitiMethodSecurityConfiguration' of type [org.activiti.spring.boot.ActivitiMethodSecurityAutoConfiguration$ActivitiMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$c870d505] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-06-23 02:45:15.031  INFO 221668 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-06-23 02:45:15.040  INFO 221668 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-23 02:45:15.041  INFO 221668 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-06-23 02:45:15.139  INFO 221668 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-23 02:45:15.139  INFO 221668 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2604 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:0 workerId:23
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+2026-06-23 02:45:16.086  WARN 221668 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 713fe413-0dd7-4086-bb52-08407525743b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-23 02:45:16.731  INFO 221668 --- [           main] o.a.e.i.c.ProcessEngineConfigurationImpl : Found 1 Process Engine Configurators in total:
+2026-06-23 02:45:16.736  INFO 221668 --- [           main] o.a.e.i.c.ProcessEngineConfigurationImpl : class org.activiti.spring.process.conf.ProcessExtensionsConfiguratorAutoConfiguration$$EnhancerBySpringCGLIB$$559c852a (priority:10000)
+2026-06-23 02:45:16.736  INFO 221668 --- [           main] o.a.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.activiti.spring.process.conf.ProcessExtensionsConfiguratorAutoConfiguration$$EnhancerBySpringCGLIB$$559c852a (priority:10000)
+2026-06-23 02:45:16.770  INFO 221668 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-23 02:45:17.118  INFO 221668 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-23 02:45:18.072  INFO 221668 --- [           main] o.a.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.activiti.spring.process.conf.ProcessExtensionsConfiguratorAutoConfiguration$$EnhancerBySpringCGLIB$$559c852a (priority:10000)
+Opening JDBC Connection
+==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+==> Parameters: schema.version(String)
+<==    Columns: NAME_, VALUE_, REV_
+<==        Row: schema.version, 7.1.0-M6, 1
+<==      Total: 1
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1650626168 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+2026-06-23 02:45:18.178  INFO 221668 --- [           main] o.a.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2026-06-23 02:45:18.182  INFO 221668 --- [           main] o.a.e.i.a.DefaultAsyncJobExecutor        : Starting up the default async job executor [org.activiti.spring.SpringAsyncExecutor].
+2026-06-23 02:45:18.184  INFO 221668 --- [       Thread-1] o.a.e.i.a.AcquireAsyncJobsDueRunnable    : {} starting to acquire async jobs due
+2026-06-23 02:45:18.184  INFO 221668 --- [       Thread-2] o.a.e.i.a.AcquireTimerJobsRunnable       : {} starting to acquire async jobs due
+2026-06-23 02:45:18.184  INFO 221668 --- [       Thread-3] o.a.e.i.a.ResetExpiredJobsRunnable       : {} starting to reset expired jobs
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:45:18.187(Timestamp), 3(Integer), 0(Integer)
+==> Parameters: 1(Integer), 0(Integer)
+==> Parameters: 2026-06-23 02:45:18.189(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1974277271 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ?
+==> Parameters: cfg.execution-related-entities-count(String)
+<==      Total: 0
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@373233578 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1324665665 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+<==    Columns: NAME_, VALUE_, REV_
+<==        Row: cfg.execution-related-entities-count, false, 1
+<==      Total: 1
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1553646796 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select * from ACT_RE_DEPLOYMENT D where NAME_=? order by D.DEPLOY_TIME_ desc
+==> Parameters: SpringAutoDeployment(String)
+<==    Columns: ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_, VERSION_, PROJECT_RELEASE_VERSION_
+<==        Row: bd710d11-6e69-11f1-b1a2-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:39:45.388, null, 77, null
+<==        Row: a84b3b34-6e69-11f1-b5e5-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:39:09.912, null, 76, null
+<==        Row: 81bf5ee8-6e69-11f1-8c5b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:38:05.239, null, 75, null
+<==        Row: 07033cc5-6e69-11f1-9308-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:34:39.328, null, 74, null
+<==        Row: b3f92696-6e68-11f1-9514-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:32:20.007, null, 73, null
+<==        Row: c0a176b0-6e67-11f1-9b66-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:25:31.746, null, 72, null
+<==        Row: 8fcbf044-6e67-11f1-ba3b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:24:09.818, null, 71, null
+<==        Row: 2399e198-6e67-11f1-8e31-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:21:08.297, null, 70, null
+<==        Row: ce19dec3-6e65-11f1-98ab-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:11:35.353, null, 69, null
+<==        Row: ec547928-6e64-11f1-a932-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:05:16.574, null, 68, null
+<==        Row: c2231585-6e64-11f1-88e6-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:04:05.783, null, 67, null
+<==        Row: a2ce744d-6e64-11f1-9c53-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 02:03:13.223, null, 66, null
+<==        Row: 18230892-6e64-11f1-9e9e-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:59:20.546, null, 65, null
+<==        Row: a18ce89f-6e63-11f1-bac6-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:56:01.615, null, 64, null
+<==        Row: 4ab09520-6e63-11f1-a98b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:53:35.888, null, 63, null
+<==        Row: cd5388cb-6e62-11f1-b3e9-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:50:05.564, null, 62, null
+<==        Row: ef97ec76-6e61-11f1-957b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:43:53.558, null, 61, null
+<==        Row: f0bba157-6e60-11f1-a9c9-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 01:36:45.959, null, 60, null
+<==        Row: ce95e317-6e59-11f1-ac33-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:45:42.208, null, 59, null
+<==        Row: b614ffc3-6e59-11f1-a146-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:45:01.094, null, 58, null
+<==        Row: fdcca29d-6e58-11f1-9ff1-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:39:51.920, null, 57, null
+<==        Row: 5b8a182e-6e58-11f1-aee1-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:35:19.694, null, 56, null
+<==        Row: 807e58e5-6e57-11f1-a3b6-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:29:12.183, null, 55, null
+<==        Row: cfd10230-6e56-11f1-a443-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:24:15.785, null, 54, null
+<==        Row: 0f4af7cb-6e56-11f1-b5c2-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:18:52.782, null, 53, null
+<==        Row: d04d2ce8-6e55-11f1-a678-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:17:07.100, null, 52, null
+<==        Row: a41d1216-6e55-11f1-82bf-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:15:52.967, null, 51, null
+<==        Row: 046884d5-6e55-11f1-a90b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:11:25.025, null, 50, null
+<==        Row: 934ab134-6e54-11f1-a9e2-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:08:15.239, null, 49, null
+<==        Row: d066e09f-6e53-11f1-b491-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-23 00:02:48.273, null, 48, null
+<==        Row: aa982fd5-6e52-11f1-8221-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:54:35.348, null, 47, null
+<==        Row: aa822c7b-6e51-11f1-a6a5-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:47:25.711, null, 46, null
+<==        Row: 4f31dc24-6e51-11f1-a216-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:44:52.508, null, 45, null
+<==        Row: 4c601f2a-6e51-11f1-9a41-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:44:47.777, null, 44, null
+<==        Row: 07788864-6e4e-11f1-af9b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:21:23.651, null, 43, null
+<==        Row: 4ddf1a03-6e4d-11f1-af8a-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:16:12.291, null, 42, null
+<==        Row: 6b70e830-6e4b-11f1-91eb-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 23:02:42.895, null, 41, null
+<==        Row: 7a00e4d6-6e4a-11f1-accc-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 22:55:57.783, null, 40, null
+<==        Row: 89e28dfc-6e49-11f1-898e-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 22:49:14.990, null, 39, null
+<==        Row: dfa6f164-6e43-11f1-a42b-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 22:08:41.869, null, 38, null
+<==        Row: bbafaa18-6e40-11f1-8b79-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 21:46:13.063, null, 37, null
+<==        Row: fe6039c8-6e3f-11f1-ba1f-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 21:40:55.462, null, 36, null
+<==        Row: c11e6b6b-6e3e-11f1-a6b9-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 21:32:03.172, null, 35, null
+<==        Row: f376d456-6e3c-11f1-9909-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 21:19:08.642, null, 34, null
+<==        Row: 88a2c31a-6e3b-11f1-b888-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 21:08:59.952, null, 33, null
+<==        Row: 91e1a00d-6e39-11f1-8bf4-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 20:54:56.447, null, 32, null
+<==        Row: 51403769-6e39-11f1-89d0-00ff206b16bd, SpringAutoDeployment, null, null, , 2026-06-22 20:53:08.012, null, 31, null
+<==        Row: 39407bb4-6e12-11f1-ab26-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 16:13:17.406, null, 30, null
+<==        Row: 30cbdf74-6e12-11f1-8954-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 16:13:03.214, null, 29, null
+<==        Row: cad74228-6e11-11f1-b884-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 16:10:12.160, null, 28, null
+<==        Row: 83f92a84-6e11-11f1-8214-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 16:08:13.263, null, 27, null
+<==        Row: 3fd3cb8a-6e11-11f1-afab-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 16:06:18.930, null, 26, null
+<==        Row: 71971f15-6e0f-11f1-a6a2-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:53:23.439, null, 25, null
+<==        Row: 5b8ae59c-6e0f-11f1-8ce0-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:52:46.448, null, 24, null
+<==        Row: d638097e-6e0e-11f1-b86c-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:49:02.762, null, 23, null
+<==        Row: d30518b0-6e0e-11f1-9e57-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:48:57.396, null, 22, null
+<==        Row: 3e519f61-6e0e-11f1-9af5-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:44:47.920, null, 21, null
+<==        Row: 469b50c8-6e0d-11f1-9362-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:37:52.323, null, 20, null
+<==        Row: db36c090-6e0b-11f1-94f0-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:27:42.660, null, 19, null
+<==        Row: c17ba4a0-6e0a-11f1-8dad-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:19:49.989, null, 18, null
+<==        Row: 29a0fabd-6e0a-11f1-858e-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:15:35.220, null, 17, null
+<==        Row: d6157edf-6e09-11f1-b852-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:13:15.055, null, 16, null
+<==        Row: d14e3380-6e09-11f1-9854-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:13:07.041, null, 15, null
+<==        Row: e3c777a0-6e08-11f1-b91e-005056c00008, SpringAutoDeployment, null, null, , 2026-06-22 15:06:28.541, null, 14, null
+<==        Row: a6099b00-6ded-11f1-9f40-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 11:51:28.534, null, 13, null
+<==        Row: 47c68d37-6dec-11f1-ab40-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 11:41:40.897, null, 12, null
+<==        Row: 0c959e6e-6deb-11f1-b638-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 11:32:52.100, null, 11, null
+<==        Row: ed1f9287-6dea-11f1-b4be-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 11:31:59.318, null, 10, null
+<==        Row: 6d579581-6de9-11f1-8628-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 11:21:15.438, null, 9, null
+<==        Row: f83a3090-6de4-11f1-bd21-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 10:49:20.966, null, 8, null
+<==        Row: 920ea465-6de4-11f1-be89-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 10:46:29.552, null, 7, null
+<==        Row: b2411f45-6de0-11f1-8874-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 10:18:45.586, null, 6, null
+<==        Row: 71fc54c4-6de0-11f1-b61b-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 10:16:57.759, null, 5, null
+<==        Row: 4361ca74-6de0-11f1-82eb-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 10:15:39.573, null, 4, null
+<==        Row: 8b7e9fbd-6ddc-11f1-8b5b-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 09:49:02.570, null, 3, null
+<==        Row: 52a9c8f5-6ddb-11f1-b16f-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 09:40:17.728, null, 2, null
+<==        Row: 1b14f697-6ddb-11f1-8e79-0250f2000002, SpringAutoDeployment, null, null, , 2026-06-22 09:38:44.479, null, 1, null
+<==      Total: 77
+==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc
+==> Parameters: 83d63b86-6e6a-11f1-ae52-00ff206b16bd(String)
+<==      Total: 0
+==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_, VERSION_, PROJECT_RELEASE_VERSION_) values(?, ?, ?, ?, ?, ?, ?, ?, ?)
+==> Parameters: 83d63b86-6e6a-11f1-ae52-00ff206b16bd(String), SpringAutoDeployment(String), null, null, (String), 2026-06-23 02:45:18.24(Timestamp), null, 78(Integer), null
+<==    Updates: 1
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@936261188 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+2026-06-23 02:45:18.637  INFO 221668 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25a5c7db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d27d9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a8cbffe, org.springframework.security.web.header.HeaderWriterFilter@45e22def, org.springframework.security.web.authentication.logout.LogoutFilter@3d8b319e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61e7bf2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a28b346, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28f878a0, org.springframework.security.web.session.SessionManagementFilter@58516c91, org.springframework.security.web.access.ExceptionTranslationFilter@2cc04358, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1416a80a]
+2026-06-23 02:45:18.777 DEBUG 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-06-23 02:45:18.826  INFO 221668 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-06-23 02:45:18.922 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.ActivityController:
+	{PUT [/api/activity]}: update(TbActivity)
+	{GET [/api/activity/list]}: list()
+	{DELETE [/api/activity/{id}]}: delete(Long)
+	{POST [/api/activity]}: save(TbActivity)
+	{GET [/api/activity/pending-tasks]}: pendingTasks(String)
+	{PUT [/api/activity/approve/{id}]}: approve(Long,String,String)
+	{GET [/api/activity/{id}]}: getById(Long)
+2026-06-23 02:45:18.926 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.ClubController:
+	{PUT [/api/club]}: update(TbClub)
+	{GET [/api/club/list]}: list()
+	{DELETE [/api/club/{id}]}: delete(Long)
+	{POST [/api/club]}: save(TbClub)
+	{GET [/api/club/{id}]}: getById(Long)
+2026-06-23 02:45:18.928 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.FacilityController:
+	{PUT [/api/facility]}: update(TbFacility)
+	{GET [/api/facility/list]}: list()
+	{DELETE [/api/facility/{id}]}: delete(Long)
+	{POST [/api/facility]}: save(TbFacility)
+	{GET [/api/facility/{id}]}: getById(Long)
+2026-06-23 02:45:18.928 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.FileController:
+	{POST [/api/file/upload]}: upload(MultipartFile)
+2026-06-23 02:45:18.929 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.SpaController:
+	{ [/dashboard || /activity || /facility || /profile || /login || /venue || /club || /user]}: forward()
+2026-06-23 02:45:18.930 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.UserController:
+	{PUT [/api/user]}: update(SysUser)
+	{GET [/api/user/list]}: list(String)
+	{POST [/api/user/register]}: register(SysUser)
+	{DELETE [/api/user/{id}]}: delete(Long)
+	{GET [/api/user/info]}: getInfo(String)
+	{PUT [/api/user/password]}: changePassword(Map)
+	{POST [/api/user/login]}: login(Map)
+2026-06-23 02:45:18.931 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.v.c.VenueController:
+	{PUT [/api/venue]}: update(TbVenue)
+	{GET [/api/venue/list]}: list()
+	{DELETE [/api/venue/{id}]}: delete(Long)
+	{POST [/api/venue]}: save(TbVenue)
+	{GET [/api/venue/{id}]}: getById(Long)
+2026-06-23 02:45:18.933 TRACE 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2026-06-23 02:45:18.936 DEBUG 221668 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 33 mappings in 'requestMappingHandlerMapping'
+2026-06-23 02:45:18.943 DEBUG 221668 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2026-06-23 02:45:18.952 TRACE 221668 --- [           main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2026-06-23 02:45:18.982 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/uploads/**] onto ResourceHttpRequestHandler [URL [file:C:/Users/admin/Desktop/club-venue-management/club-venue-server/uploads/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/css/**] onto ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/js/**] onto ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/fonts/**] onto ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]
+2026-06-23 02:45:18.983 TRACE 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/index.html] onto ResourceHttpRequestHandler [classpath [static/index.html]]
+2026-06-23 02:45:18.983 DEBUG 221668 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /uploads/**, /css/**, /js/**, /fonts/**, /index.html] in 'resourceHandlerMapping'
+2026-06-23 02:45:18.996 DEBUG 221668 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-06-23 02:45:20.221  INFO 221668 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-23 02:45:20.315  INFO 221668 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-23 02:45:20.316  INFO 221668 --- [           main] o.a.s.AbstractActivitiSmartLifeCycle     : Starting...
+Opening JDBC Connection
+==>  Preparing: select distinct RES.* from ACT_RE_PROCDEF RES order by RES.ID_ asc LIMIT ? OFFSET ?
+==> Parameters: 2147483647(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1692317071 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+2026-06-23 02:45:20.337  INFO 221668 --- [           main] o.a.s.AbstractActivitiSmartLifeCycle     : Started.
+2026-06-23 02:45:20.337  INFO 221668 --- [           main] o.a.s.AbstractActivitiSmartLifeCycle     : Starting...
+Opening JDBC Connection
+==>  Preparing: select distinct RES.* from ACT_RE_PROCDEF RES order by RES.ID_ asc LIMIT ? OFFSET ?
+==> Parameters: 2147483647(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@859279938 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+2026-06-23 02:45:20.341  INFO 221668 --- [           main] o.a.s.AbstractActivitiSmartLifeCycle     : Started.
+2026-06-23 02:45:20.352  INFO 221668 --- [           main] com.club.venue.ClubVenueApplication      : Started ClubVenueApplication in 8.571 seconds (JVM running for 9.403)
+2026-06-23 02:45:20.873  INFO 221668 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:20.873  INFO 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-23 02:45:20.873 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@50521af4
+2026-06-23 02:45:20.873 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@40bcc2e8
+2026-06-23 02:45:20.873 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@490e7c07
+2026-06-23 02:45:20.875 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2026-06-23 02:45:20.875 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2026-06-23 02:45:20.875 DEBUG 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-06-23 02:45:20.875  INFO 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-23 02:45:20.905 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:20.933 TRACE 221668 --- [nio-8081-exec-1] o.s.w.s.m.ParameterizableViewController  : Applying default cacheSeconds=-1
+2026-06-23 02:45:20.943 DEBUG 221668 --- [nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-06-23 02:45:20.943 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'forward:'; URL [index.html]] 
+2026-06-23 02:45:20.943 DEBUG 221668 --- [nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2026-06-23 02:45:20.944 DEBUG 221668 --- [nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2026-06-23 02:45:20.946 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:20.946 TRACE 221668 --- [nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [static/index.html]]] and 3 interceptors
+2026-06-23 02:45:20.947 TRACE 221668 --- [nio-8081-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=0
+2026-06-23 02:45:20.957 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:20.959 DEBUG 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200, headers={masked}
+2026-06-23 02:45:20.959 DEBUG 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@364217870 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:45:28.205(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@725306738 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+2026-06-23 02:45:30.582 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/venue/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:30.584 TRACE 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/club/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:30.584 TRACE 221668 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.VenueController#list()
+2026-06-23 02:45:30.584 TRACE 221668 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ClubController#list()
+2026-06-23 02:45:30.589 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/activity/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:30.589 TRACE 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/facility/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:30.590 TRACE 221668 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.FacilityController#list()
+2026-06-23 02:45:30.590 TRACE 221668 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ActivityController#list()
+2026-06-23 02:45:30.600 TRACE 221668 --- [nio-8081-exec-5] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:30.601 TRACE 221668 --- [nio-8081-exec-3] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:30.601 TRACE 221668 --- [nio-8081-exec-2] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:30.601 TRACE 221668 --- [nio-8081-exec-4] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e90471] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5058dfa1] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52b2ab85] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@729c3152] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1570194976 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ba42fe4] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@798608092 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c] will not be managed by Spring
+==>  Preparing: SELECT club_id,club_name,avatar,leader_id,leader_name,category,phone,intro_id,deleted,create_time,update_time FROM tb_club
+JDBC Connection [HikariProxyConnection@1616014122 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43] will not be managed by Spring
+==>  Preparing: SELECT venue_id,venue_name,venue_no,status,venue_group_id,deleted,create_time,update_time FROM tb_venue
+==> Parameters: 
+==> Parameters: 
+JDBC Connection [HikariProxyConnection@97295486 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8] will not be managed by Spring
+==>  Preparing: SELECT activity_id,activity_name,reason,start_time,end_time,applicant_id,club_id,venue_id,poster,status,deleted,create_time,update_time FROM tb_activity
+==>  Preparing: SELECT facility_id,facility_name,status,venue_id,deleted,create_time,update_time FROM tb_facility
+==> Parameters: 
+==> Parameters: 
+<==      Total: 0
+<==    Columns: venue_id, venue_name, venue_no, status, venue_group_id, deleted, create_time, update_time
+<==    Columns: club_id, club_name, avatar, leader_id, leader_name, category, phone, intro_id, deleted, create_time, update_time
+<==    Columns: facility_id, facility_name, status, venue_id, deleted, create_time, update_time
+<==        Row: 4, 111, , null, 1111111111, 学术科技, 1111111, null, 0, 2026-06-23 02:42:51, 2026-06-23 02:42:51
+<==        Row: 1, 111, 正常, 1, 0, 2026-06-23 02:42:27, 2026-06-23 02:42:27
+<==        Row: 1, 123, 1222222, 可用, null, 0, 2026-06-23 02:41:31, 2026-06-23 02:41:50
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5058dfa1]
+<==      Total: 1
+<==        Row: 5, 321, , null, 25252, 文化艺术, 22222222, null, 0, 2026-06-23 02:43:05, 2026-06-23 02:43:21
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e90471]
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52b2ab85]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@729c3152]
+2026-06-23 02:45:30.740 DEBUG 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:30.740 DEBUG 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:30.740 DEBUG 221668 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:30.741 DEBUG 221668 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:30.741 TRACE 221668 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbFacility(facilityId=1, facilityName=111, status=姝ｅ父, venueId=1, deleted=0, createTime=2026-06-23T02:42:27, updateTime=2026-06-23T02:42:27)])]
+2026-06-23 02:45:30.742 TRACE 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbVenue(venueId=1, venueName=123, venueNo=1222222, status=鍙敤, venueGroupId=null, deleted=0, createTime=2026-06-23T02:41:31, updateTime=2026-06-23T02:41:50)])]
+2026-06-23 02:45:30.742 TRACE 221668 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbClub(clubId=4, clubName=111, avatar=, leaderId=null, leaderName=1111111111, category=瀛︽湳绉戞妧, phone=1111111, introId=null, deleted=0, createTime=2026-06-23T02:42:51, updateTime=2026-06-23T02:42:51), TbClub(clubId=5, clubName=321, avatar=, leaderId=null, leaderName=25252, category=鏂囧寲鑹烘湳, phone=22222222, introId=null, deleted=0, createTime=2026-06-23T02:43:05, updateTime=2026-06-23T02:43:21)])]
+2026-06-23 02:45:30.742 TRACE 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2026-06-23 02:45:30.759 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:30.759 DEBUG 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:30.764 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:30.765 TRACE 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:30.765 DEBUG 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:30.765 DEBUG 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:30.767 TRACE 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:30.767 DEBUG 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.668 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/dashboard", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.669 TRACE 221668 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.SpaController#forward()
+2026-06-23 02:45:32.671 TRACE 221668 --- [nio-8081-exec-6] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:32.673 DEBUG 221668 --- [nio-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2026-06-23 02:45:32.673 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.web.servlet.view.InternalResourceView: name 'forward:'; URL [/index.html]] 
+2026-06-23 02:45:32.673 DEBUG 221668 --- [nio-8081-exec-6] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2026-06-23 02:45:32.673 DEBUG 221668 --- [nio-8081-exec-6] o.s.w.servlet.view.InternalResourceView  : Forwarding to [/index.html]
+2026-06-23 02:45:32.673 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.674 TRACE 221668 --- [nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [static/index.html]]] and 3 interceptors
+2026-06-23 02:45:32.675 TRACE 221668 --- [nio-8081-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=0
+2026-06-23 02:45:32.675 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.675 DEBUG 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200, headers={masked}
+2026-06-23 02:45:32.675 DEBUG 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.711 TRACE 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/app.d226fbe6.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.712 TRACE 221668 --- [nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/js/**, /**]
+2026-06-23 02:45:32.714 TRACE 221668 --- [nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]] and 3 interceptors
+2026-06-23 02:45:32.715 TRACE 221668 --- [nio-8081-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=31536000
+2026-06-23 02:45:32.715 TRACE 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.715 DEBUG 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.742 TRACE 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/804.476e97e2.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.742 TRACE 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/804.dd1663d6.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.743 TRACE 221668 --- [nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/js/**, /**]
+2026-06-23 02:45:32.743 TRACE 221668 --- [nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]] and 3 interceptors
+2026-06-23 02:45:32.743 TRACE 221668 --- [nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/css/**, /**]
+2026-06-23 02:45:32.743 TRACE 221668 --- [nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [static/css/], classpath [static/js/], classpath [static/fonts/]]] and 3 interceptors
+2026-06-23 02:45:32.744 TRACE 221668 --- [nio-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=31536000
+2026-06-23 02:45:32.744 TRACE 221668 --- [nio-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=31536000
+2026-06-23 02:45:32.744 TRACE 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.744 DEBUG 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.744 TRACE 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.744 DEBUG 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.757 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/club/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.757 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/facility/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.757 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/activity/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.757 TRACE 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/venue/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:32.758 TRACE 221668 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ActivityController#list()
+2026-06-23 02:45:32.758 TRACE 221668 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ClubController#list()
+2026-06-23 02:45:32.758 TRACE 221668 --- [nio-8081-exec-4] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:32.758 TRACE 221668 --- [io-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.VenueController#list()
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c96fc56] was not registered for synchronization because synchronization is not active
+2026-06-23 02:45:32.758 TRACE 221668 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.FacilityController#list()
+2026-06-23 02:45:32.759 TRACE 221668 --- [io-8081-exec-10] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:32.758 TRACE 221668 --- [nio-8081-exec-1] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd6bc42] was not registered for synchronization because synchronization is not active
+2026-06-23 02:45:32.759 TRACE 221668 --- [nio-8081-exec-2] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d3e7322] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34e20d1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1292869974 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ba42fe4] will not be managed by Spring
+==>  Preparing: SELECT activity_id,activity_name,reason,start_time,end_time,applicant_id,club_id,venue_id,poster,status,deleted,create_time,update_time FROM tb_activity
+JDBC Connection [HikariProxyConnection@1393641864 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43] will not be managed by Spring
+==>  Preparing: SELECT venue_id,venue_name,venue_no,status,venue_group_id,deleted,create_time,update_time FROM tb_venue
+==> Parameters: 
+JDBC Connection [HikariProxyConnection@456557770 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@477292791 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8] will not be managed by Spring
+==>  Preparing: SELECT club_id,club_name,avatar,leader_id,leader_name,category,phone,intro_id,deleted,create_time,update_time FROM tb_club
+==> Parameters: 
+==>  Preparing: SELECT facility_id,facility_name,status,venue_id,deleted,create_time,update_time FROM tb_facility
+==> Parameters: 
+==> Parameters: 
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c96fc56]
+<==    Columns: club_id, club_name, avatar, leader_id, leader_name, category, phone, intro_id, deleted, create_time, update_time
+<==    Columns: venue_id, venue_name, venue_no, status, venue_group_id, deleted, create_time, update_time
+<==    Columns: facility_id, facility_name, status, venue_id, deleted, create_time, update_time
+<==        Row: 1, 123, 1222222, 可用, null, 0, 2026-06-23 02:41:31, 2026-06-23 02:41:50
+2026-06-23 02:45:32.761 DEBUG 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+<==        Row: 1, 111, 正常, 1, 0, 2026-06-23 02:42:27, 2026-06-23 02:42:27
+2026-06-23 02:45:32.762 TRACE 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+<==        Row: 4, 111, , null, 1111111111, 学术科技, 1111111, null, 0, 2026-06-23 02:42:51, 2026-06-23 02:42:51
+<==      Total: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd6bc42]
+<==        Row: 5, 321, , null, 25252, 文化艺术, 22222222, null, 0, 2026-06-23 02:43:05, 2026-06-23 02:43:21
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d3e7322]
+2026-06-23 02:45:32.762 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.762 DEBUG 221668 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+<==      Total: 2
+2026-06-23 02:45:32.762 DEBUG 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34e20d1]
+2026-06-23 02:45:32.762 DEBUG 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:32.762 TRACE 221668 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbVenue(venueId=1, venueName=123, venueNo=1222222, status=鍙敤, venueGroupId=null, deleted=0, createTime=2026-06-23T02:41:31, updateTime=2026-06-23T02:41:50)])]
+2026-06-23 02:45:32.763 DEBUG 221668 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:32.763 TRACE 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbFacility(facilityId=1, facilityName=111, status=姝ｅ父, venueId=1, deleted=0, createTime=2026-06-23T02:42:27, updateTime=2026-06-23T02:42:27)])]
+2026-06-23 02:45:32.763 TRACE 221668 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbClub(clubId=4, clubName=111, avatar=, leaderId=null, leaderName=1111111111, category=瀛︽湳绉戞妧, phone=1111111, introId=null, deleted=0, createTime=2026-06-23T02:42:51, updateTime=2026-06-23T02:42:51), TbClub(clubId=5, clubName=321, avatar=, leaderId=null, leaderName=25252, category=鏂囧寲鑹烘湳, phone=22222222, introId=null, deleted=0, createTime=2026-06-23T02:43:05, updateTime=2026-06-23T02:43:21)])]
+2026-06-23 02:45:32.763 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.763 DEBUG 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.765 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.765 DEBUG 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:32.765 TRACE 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:32.765 DEBUG 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:34.714 TRACE 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/club/list?_=1782153934703", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:34.714 TRACE 221668 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ClubController#list()
+2026-06-23 02:45:34.714 TRACE 221668 --- [nio-8081-exec-3] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a886dbc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@848695111 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c] will not be managed by Spring
+==>  Preparing: SELECT club_id,club_name,avatar,leader_id,leader_name,category,phone,intro_id,deleted,create_time,update_time FROM tb_club
+==> Parameters: 
+<==    Columns: club_id, club_name, avatar, leader_id, leader_name, category, phone, intro_id, deleted, create_time, update_time
+<==        Row: 4, 111, , null, 1111111111, 学术科技, 1111111, null, 0, 2026-06-23 02:42:51, 2026-06-23 02:42:51
+<==        Row: 5, 321, , null, 25252, 文化艺术, 22222222, null, 0, 2026-06-23 02:43:05, 2026-06-23 02:43:21
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a886dbc]
+2026-06-23 02:45:34.719 DEBUG 221668 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:34.719 TRACE 221668 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbClub(clubId=4, clubName=111, avatar=, leaderId=null, leaderName=1111111111, category=瀛︽湳绉戞妧, phone=1111111, introId=null, deleted=0, createTime=2026-06-23T02:42:51, updateTime=2026-06-23T02:42:51), TbClub(clubId=5, clubName=321, avatar=, leaderId=null, leaderName=25252, category=鏂囧寲鑹烘湳, phone=22222222, introId=null, deleted=0, createTime=2026-06-23T02:43:05, updateTime=2026-06-23T02:43:21)])]
+2026-06-23 02:45:34.721 TRACE 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:34.721 DEBUG 221668 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:35.675 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/club/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:35.675 TRACE 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/venue/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:35.675 TRACE 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/activity/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:35.675 TRACE 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/facility/list", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:35.676 TRACE 221668 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ActivityController#list()
+2026-06-23 02:45:35.676 TRACE 221668 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.VenueController#list()
+2026-06-23 02:45:35.676 TRACE 221668 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.FacilityController#list()
+2026-06-23 02:45:35.676 TRACE 221668 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ClubController#list()
+2026-06-23 02:45:35.677 TRACE 221668 --- [nio-8081-exec-8] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:35.677 TRACE 221668 --- [nio-8081-exec-6] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:35.677 TRACE 221668 --- [nio-8081-exec-7] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:35.677 TRACE 221668 --- [nio-8081-exec-5] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22eb3802] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6557d60c] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334249a] was not registered for synchronization because synchronization is not active
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31884898] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1326550431 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8] will not be managed by Spring
+JDBC Connection [HikariProxyConnection@1062187225 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ba42fe4] will not be managed by Spring
+==>  Preparing: SELECT activity_id,activity_name,reason,start_time,end_time,applicant_id,club_id,venue_id,poster,status,deleted,create_time,update_time FROM tb_activity
+JDBC Connection [HikariProxyConnection@636991268 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c] will not be managed by Spring
+==>  Preparing: SELECT facility_id,facility_name,status,venue_id,deleted,create_time,update_time FROM tb_facility
+JDBC Connection [HikariProxyConnection@498697788 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43] will not be managed by Spring
+==>  Preparing: SELECT club_id,club_name,avatar,leader_id,leader_name,category,phone,intro_id,deleted,create_time,update_time FROM tb_club
+==>  Preparing: SELECT venue_id,venue_name,venue_no,status,venue_group_id,deleted,create_time,update_time FROM tb_venue
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+==> Parameters: 
+<==      Total: 0
+<==    Columns: venue_id, venue_name, venue_no, status, venue_group_id, deleted, create_time, update_time
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31884898]
+<==    Columns: club_id, club_name, avatar, leader_id, leader_name, category, phone, intro_id, deleted, create_time, update_time
+<==    Columns: facility_id, facility_name, status, venue_id, deleted, create_time, update_time
+<==        Row: 4, 111, , null, 1111111111, 学术科技, 1111111, null, 0, 2026-06-23 02:42:51, 2026-06-23 02:42:51
+<==        Row: 1, 111, 正常, 1, 0, 2026-06-23 02:42:27, 2026-06-23 02:42:27
+<==        Row: 1, 123, 1222222, 可用, null, 0, 2026-06-23 02:41:31, 2026-06-23 02:41:50
+<==      Total: 1
+<==        Row: 5, 321, , null, 25252, 文化艺术, 22222222, null, 0, 2026-06-23 02:43:05, 2026-06-23 02:43:21
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@334249a]
+<==      Total: 2
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6557d60c]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22eb3802]
+2026-06-23 02:45:35.684 DEBUG 221668 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:35.684 DEBUG 221668 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:35.684 TRACE 221668 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2026-06-23 02:45:35.684 DEBUG 221668 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:35.684 DEBUG 221668 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:35.684 TRACE 221668 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbVenue(venueId=1, venueName=123, venueNo=1222222, status=鍙敤, venueGroupId=null, deleted=0, createTime=2026-06-23T02:41:31, updateTime=2026-06-23T02:41:50)])]
+2026-06-23 02:45:35.684 TRACE 221668 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbFacility(facilityId=1, facilityName=111, status=姝ｅ父, venueId=1, deleted=0, createTime=2026-06-23T02:42:27, updateTime=2026-06-23T02:42:27)])]
+2026-06-23 02:45:35.684 TRACE 221668 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbClub(clubId=4, clubName=111, avatar=, leaderId=null, leaderName=1111111111, category=瀛︽湳绉戞妧, phone=1111111, introId=null, deleted=0, createTime=2026-06-23T02:42:51, updateTime=2026-06-23T02:42:51), TbClub(clubId=5, clubName=321, avatar=, leaderId=null, leaderName=25252, category=鏂囧寲鑹烘湳, phone=22222222, introId=null, deleted=0, createTime=2026-06-23T02:43:05, updateTime=2026-06-23T02:43:21)])]
+2026-06-23 02:45:35.686 TRACE 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:35.686 TRACE 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:35.686 DEBUG 221668 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:35.686 DEBUG 221668 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:35.686 TRACE 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:35.686 DEBUG 221668 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:35.686 TRACE 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:35.688 DEBUG 221668 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@285038062 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:45:38.208(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@734663989 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+2026-06-23 02:45:42.159 TRACE 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/club/list?_=1782153942150", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:42.159 TRACE 221668 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ClubController#list()
+2026-06-23 02:45:42.159 TRACE 221668 --- [nio-8081-exec-9] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a76651f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@884050977 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43] will not be managed by Spring
+==>  Preparing: SELECT club_id,club_name,avatar,leader_id,leader_name,category,phone,intro_id,deleted,create_time,update_time FROM tb_club
+==> Parameters: 
+<==    Columns: club_id, club_name, avatar, leader_id, leader_name, category, phone, intro_id, deleted, create_time, update_time
+<==        Row: 4, 111, , null, 1111111111, 学术科技, 1111111, null, 0, 2026-06-23 02:42:51, 2026-06-23 02:42:51
+<==        Row: 5, 321, , null, 25252, 文化艺术, 22222222, null, 0, 2026-06-23 02:43:05, 2026-06-23 02:43:21
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a76651f]
+2026-06-23 02:45:42.166 DEBUG 221668 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:42.166 TRACE 221668 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbClub(clubId=4, clubName=111, avatar=, leaderId=null, leaderName=1111111111, category=瀛︽湳绉戞妧, phone=1111111, introId=null, deleted=0, createTime=2026-06-23T02:42:51, updateTime=2026-06-23T02:42:51), TbClub(clubId=5, clubName=321, avatar=, leaderId=null, leaderName=25252, category=鏂囧寲鑹烘湳, phone=22222222, introId=null, deleted=0, createTime=2026-06-23T02:43:05, updateTime=2026-06-23T02:43:21)])]
+2026-06-23 02:45:42.167 TRACE 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:42.167 DEBUG 221668 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:42.478 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/venue/list?_=1782153942467", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:42.479 TRACE 221668 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.VenueController#list()
+2026-06-23 02:45:42.479 TRACE 221668 --- [nio-8081-exec-4] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29da9d01] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1928699936 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ba42fe4] will not be managed by Spring
+==>  Preparing: SELECT venue_id,venue_name,venue_no,status,venue_group_id,deleted,create_time,update_time FROM tb_venue
+==> Parameters: 
+<==    Columns: venue_id, venue_name, venue_no, status, venue_group_id, deleted, create_time, update_time
+<==        Row: 1, 123, 1222222, 可用, null, 0, 2026-06-23 02:41:31, 2026-06-23 02:41:50
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29da9d01]
+2026-06-23 02:45:42.483 DEBUG 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:42.484 TRACE 221668 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbVenue(venueId=1, venueName=123, venueNo=1222222, status=鍙敤, venueGroupId=null, deleted=0, createTime=2026-06-23T02:41:31, updateTime=2026-06-23T02:41:50)])]
+2026-06-23 02:45:42.484 TRACE 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:42.484 DEBUG 221668 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:42.801 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/activity/list?_=1782153942793", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:42.801 TRACE 221668 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.ActivityController#list()
+2026-06-23 02:45:42.801 TRACE 221668 --- [nio-8081-exec-1] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26fa2c27] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1413531777 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c] will not be managed by Spring
+==>  Preparing: SELECT activity_id,activity_name,reason,start_time,end_time,applicant_id,club_id,venue_id,poster,status,deleted,create_time,update_time FROM tb_activity
+==> Parameters: 
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26fa2c27]
+2026-06-23 02:45:42.806 DEBUG 221668 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:42.806 TRACE 221668 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2026-06-23 02:45:42.806 TRACE 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:42.806 DEBUG 221668 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:43.119 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/facility/list?_=1782153943109", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:43.119 TRACE 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/venue/list?_=1782153943109", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2026-06-23 02:45:43.120 TRACE 221668 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.FacilityController#list()
+2026-06-23 02:45:43.120 TRACE 221668 --- [io-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.club.venue.controller.VenueController#list()
+2026-06-23 02:45:43.120 TRACE 221668 --- [nio-8081-exec-2] o.s.web.method.HandlerMethod             : Arguments: []
+2026-06-23 02:45:43.120 TRACE 221668 --- [io-8081-exec-10] o.s.web.method.HandlerMethod             : Arguments: []
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79a6cba0] was not registered for synchronization because synchronization is not active
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af0c918] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@603230919 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43] will not be managed by Spring
+==>  Preparing: SELECT venue_id,venue_name,venue_no,status,venue_group_id,deleted,create_time,update_time FROM tb_venue
+==> Parameters: 
+JDBC Connection [HikariProxyConnection@927924437 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8] will not be managed by Spring
+==>  Preparing: SELECT facility_id,facility_name,status,venue_id,deleted,create_time,update_time FROM tb_facility
+==> Parameters: 
+<==    Columns: venue_id, venue_name, venue_no, status, venue_group_id, deleted, create_time, update_time
+<==    Columns: facility_id, facility_name, status, venue_id, deleted, create_time, update_time
+<==        Row: 1, 111, 正常, 1, 0, 2026-06-23 02:42:27, 2026-06-23 02:42:27
+<==        Row: 1, 123, 1222222, 可用, null, 0, 2026-06-23 02:41:31, 2026-06-23 02:41:50
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7af0c918]
+<==      Total: 1
+2026-06-23 02:45:43.123 DEBUG 221668 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79a6cba0]
+2026-06-23 02:45:43.123 TRACE 221668 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbVenue(venueId=1, venueName=123, venueNo=1222222, status=鍙敤, venueGroupId=null, deleted=0, createTime=2026-06-23T02:41:31, updateTime=2026-06-23T02:41:50)])]
+2026-06-23 02:45:43.123 DEBUG 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2026-06-23 02:45:43.123 TRACE 221668 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[TbFacility(facilityId=1, facilityName=111, status=姝ｅ父, venueId=1, deleted=0, createTime=2026-06-23T02:42:27, updateTime=2026-06-23T02:42:27)])]
+2026-06-23 02:45:43.124 TRACE 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:43.124 TRACE 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2026-06-23 02:45:43.124 DEBUG 221668 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2026-06-23 02:45:43.124 DEBUG 221668 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@118027098 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:45:48.212(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@571503740 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2089553950 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:45:58.225(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@543609888 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@642456310 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:08.229(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@100209538 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:18.204(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@779797289 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@526549441 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:18.236(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@264892498 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1250444903 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:28.238(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1064369438 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1365724170 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:38.241(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@557422889 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1047305236 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:48.243(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@802773379 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@172961499 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:46:58.247(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@921957270 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@485804487 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:08.252(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@181436583 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:18.209(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@944278751 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@388666592 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:18.256(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@245223041 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2018826107 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:28.261(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1774424958 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1571211094 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:38.265(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1910297354 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1703273435 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:48.269(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@618500850 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1454186923 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:47:58.273(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@219554457 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@133549247 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:08.279(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@296662420 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:18.214(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@651125397 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1404239602 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:18.285(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@408029745 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@342778339 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:28.291(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1117059659 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1435644023 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:38.296(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@159790938 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@827730709 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:48.3(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@830042308 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2094509896 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:48:58.304(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1536155939 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@722777059 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:08.307(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@155060656 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:18.23(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2112807831 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1138651742 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:18.324(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1232036031 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@929268956 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:28.336(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@506644159 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@347809683 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:38.344(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@699669773 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@866295790 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:48.365(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@128332678 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1073448582 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:49:58.373(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1912688627 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@854121463 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:08.382(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@62657385 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:18.239(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1523146648 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@94243930 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:18.395(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@595188565 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1911924105 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:28.406(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1952128989 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1885900659 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:38.416(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@964847102 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@518275012 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:48.42(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2037398726 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@584107532 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:50:58.43(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1659896683 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1472321310 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:08.445(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@73084374 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:18.252(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@882999084 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1532987113 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:18.457(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@390342280 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1277942996 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:28.472(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@453774741 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1252247460 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:38.485(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@886965592 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@297539224 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:48.493(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@740982202 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1274380201 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:51:58.507(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@710928561 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@617299108 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:08.517(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@262138199 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:18.27(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1506269715 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@601056676 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:18.535(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1242072352 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@473053086 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:28.543(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1991010399 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1027869870 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:38.55(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1485101911 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1493645452 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:48.567(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@81489176 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1410733419 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:52:58.58(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1724557027 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1670068410 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:08.591(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2044278439 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:18.285(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1282525911 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@348066033 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:18.611(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@945099812 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1142261154 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:28.624(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1796133127 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1300511308 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:38.635(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1451957007 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1604545759 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:48.646(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@165263627 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@311638740 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:53:58.651(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1026483927 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2138096338 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:08.668(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1275844868 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:18.307(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1052209185 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1139342304 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:18.677(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1411513209 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@219587527 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:28.683(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1680290659 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1223206480 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:38.702(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1879264286 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@613234604 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:48.717(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2039460711 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1731353092 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:54:58.733(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@457003249 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@457619323 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:08.739(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1251155512 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:18.317(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1813420512 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@690667679 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:18.754(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1848799344 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@253282482 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:28.766(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1846783464 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1180274114 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:38.776(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1157407515 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1955143289 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:48.791(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@331409220 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@61074796 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:55:58.811(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@212271056 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1783380938 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:08.821(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@55469649 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:18.327(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1320363157 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@223152535 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:18.827(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@248514872 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@78719715 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:28.831(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1805687271 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@988089472 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:38.841(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1240010396 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2130314802 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:48.851(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1568621157 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1040235938 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:56:58.861(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1771875324 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1844272866 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:08.865(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@3535417 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:18.331(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@649944183 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1664115493 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:18.87(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1647902445 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1744819687 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:28.879(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@488356490 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1853359502 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:38.89(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1838123281 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@63802345 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:48.898(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@515229238 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@674393154 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:57:58.916(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1764477792 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2086485636 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:08.929(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1357395567 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:18.348(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@967364699 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@64091147 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:18.939(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2010188638 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@104018669 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:28.943(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1610677088 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1684242034 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:38.946(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1783678086 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@343969039 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:48.952(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@721651976 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1989842533 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:58:58.969(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2000392567 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@916403925 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:08.976(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1909045891 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:18.356(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1803943949 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@847896539 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:18.982(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1507920192 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1659421748 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:28.987(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@169740958 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@481504376 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:38.999(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2102043333 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1714992300 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:49.015(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1276468439 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1106405776 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 02:59:59.035(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1221939905 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@150914217 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:09.045(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@925885162 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:18.372(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1009206641 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@614959819 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:19.054(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@965200818 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1965563234 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:29.062(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2008292163 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1169776644 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:39.082(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@493406950 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@301632784 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:49.088(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1362745654 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1074236010 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:00:59.092(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@974814587 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1134893408 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:09.097(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@651380066 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:18.39(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1704952426 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1923601207 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:19.111(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1535322889 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@192409401 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:29.119(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@947712728 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@865908172 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:39.123(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@333142488 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1937913452 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:49.139(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@174802181 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@763052700 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:01:59.156(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@91186238 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1210814076 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:09.172(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1958284685 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:18.406(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@869129758 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@972882423 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:19.18(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1499912330 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1086592742 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:29.195(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@275501209 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1909092821 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:39.2(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1758551785 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@77037403 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:49.218(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@434269846 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1334148193 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:02:59.234(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@536758862 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@900101206 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:09.248(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1593162848 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:18.421(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@183180474 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@601033016 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:19.264(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@495511568 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@175491125 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:29.275(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1978272591 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2127849032 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:39.28(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@336199340 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1850661748 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:49.287(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1247938076 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1602526870 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:03:59.305(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@99793600 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2044386431 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:09.312(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@236592608 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:18.438(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@758270170 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@2053337416 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:19.326(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1846723110 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@218676280 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:29.332(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1911971737 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@752270673 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:39.345(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1165692488 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@865575148 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:49.356(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1144588370 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@339112127 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:04:59.372(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1666617775 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1342346194 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:05:09.382(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1820277417 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where RES.LOCK_EXP_TIME_ is not null and RES.LOCK_EXP_TIME_ < ? LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:05:18.442(Timestamp), 3(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@916079740 wrapping com.mysql.cj.jdbc.ConnectionImpl@44841b43]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1641044724 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:05:19.39(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1393745235 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@493727652 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_TIMER_JOB RES where DUEDATE_ <= ? and LOCK_OWNER_ is null LIMIT ? OFFSET ?
+==> Parameters: 2026-06-23 03:05:29.403(Timestamp), 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@1613293551 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b0e232c]]
+Opening JDBC Connection
+==>  Preparing: select RES.* from ACT_RU_JOB RES where LOCK_EXP_TIME_ is null LIMIT ? OFFSET ?
+==> Parameters: 1(Integer), 0(Integer)
+<==      Total: 0
+Closing JDBC Connection [Transaction-aware proxy for target Connection [HikariProxyConnection@467690301 wrapping com.mysql.cj.jdbc.ConnectionImpl@4f4af1c8]]

@@ -1,0 +1,55 @@
+server:
+  port: 8083
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  application:
+    name: club-venue-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/club_venue?characterEncoding=UTF-8&useUnicode=true&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: ${DB_PASSWORD:zhou6895230}
+    hikari:
+      auto-commit: true
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+  activiti:
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
+    process-definition-location-prefix: classpath:/processes/
+    check-process-definitions: true
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.club.venue.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    com.club.venue: debug
+    org.springframework.web: trace
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:club-venue-management-jwt-secret-key-2026-long-enough-for-hs256!}
+    expire-ms: ${JWT_EXPIRE_MS:604800000}

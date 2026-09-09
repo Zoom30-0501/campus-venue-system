@@ -1,0 +1,4 @@
+com\club\venue\common\ResultTest.class
+com\club\venue\common\JwtUtilTest.class
+com\club\venue\common\ResultTest$TestData.class
+com\club\venue\entity\EntityTest.class
